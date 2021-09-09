@@ -1,0 +1,135 @@
+body {
+    background-color:aliceblue;
+}
+
+input {
+    text-align: center;
+}
+
+/* The Main Container for them all */
+.inCenter {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+.center {
+    margin: 0 auto;
+    margin-top: 4px;
+    max-width: 1440px;
+}
+
+.titles {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px; 
+}
+/********* LEFT *********/
+.sideForm {
+    flex-basis: 196px;
+    flex-shrink: 0;
+    margin-bottom: 16px;
+}
+
+.fixedSideForm {    
+    /*position:fixed;*/
+    width: 196px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.options {
+    text-align: center;
+}
+
+.leftForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    background-color: grey;
+}
+
+.addCity {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    background-color: grey;
+    width: 196px;    
+}
+/***************************/
+
+/********* MIDDLE *********/
+.parkingForm {
+    flex-basis: 270px;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+.parkingSpots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spot {
+    background-color: darkgreen;
+    height: 128px;
+    width: 128px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.spot .content {
+    color: white;
+    color: black;
+    font-family: Helvetica, sans-serif;
+}
+
+/********* RIGHT *********/
+.parkingSpotList {
+    flex-basis: 256px;
+    flex-shrink: 0;
+}
+
+.fixedParkingSpot {    
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+}
+
+.spotList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 264px;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+
+.list {
+    display: flex;
+    justify-content:space-between;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 4px;
+    background-color:antiquewhite;
+}
+
+.delete {
+    background-color: grey; 
+    color: white;   
+}
+/***************************/
